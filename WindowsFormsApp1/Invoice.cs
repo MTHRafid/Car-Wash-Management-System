@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Invoice : Form
     {
-        private string connectionString = @"Data Source=MTHRafid;Initial Catalog=""Car Wash"";Persist Security Info=True;User ID=Rafid;Password=rafid2003;Encrypt=False";
+        private string connectionString = "data Source=MTHRAFID\\SQLEXPRESS;database=Car Wash;integrated Security=True;";
 
         public Invoice()
         {
@@ -183,6 +183,11 @@ namespace WindowsFormsApp1
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Invoice_Load(object sender, EventArgs e)
         {
 
         }

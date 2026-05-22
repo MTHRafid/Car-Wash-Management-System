@@ -55,5 +55,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void AdminLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

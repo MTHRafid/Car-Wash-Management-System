@@ -65,7 +65,7 @@ namespace WindowsFormsApp1
             Application.Exit();
            
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=MTHRafid;Initial Catalog=""Car Wash"";Persist Security Info=True;User ID=Rafid;Password=rafid2003;Encrypt=False");
+        SqlConnection Con = new SqlConnection("data Source=MTHRAFID\\SQLEXPRESS;database=Car Wash;integrated Security=True;");
         private void FillCustomers()
         {
             Con.Open();
@@ -289,6 +289,11 @@ namespace WindowsFormsApp1
             Invoice Obj = new Invoice();
             Obj.Show();
             this.Hide();
+        }
+
+        private void Start_Wash_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void AddServiceBtn_Click(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Customers : Form
     {
-        private string connectionString = @"Data Source=MTHRafid;Initial Catalog=""Car Wash"";Persist Security Info=True;User ID=Rafid;Password=rafid2003;Encrypt=False";
+        private string connectionString = "data Source=MTHRAFID\\SQLEXPRESS;database=Car Wash;integrated Security=True;";
         private string originalName = "";
         private string originalPhone = "";
         private string originalModel = "";
@@ -299,6 +299,11 @@ namespace WindowsFormsApp1
             Invoice Obj = new Invoice();
             Obj.Show();
             this.Hide();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
